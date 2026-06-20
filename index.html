@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frank Ocean</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <nav class="navbar">
+    <div class="logo">BLONDED</div>
+
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#albums">Albums</a></li>
+      <li><a href="#legacy">Legacy</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-content fade">
+      <span class="hero-tag">Artist • Visionary • Storyteller</span>
+      <h1>FRANK OCEAN</h1>
+
+      <p>
+        A voice drifting through memories, heartbreak, luxury, and solitude.
+        An artist who transformed vulnerability into timeless art.
+      </p>
+
+      <a href="#albums" class="btn">Explore Discography</a>
+    </div>
+  </section>
+
+  <section id="about" class="content-section fade">
+    <h2 class="section-title">The Mood</h2>
+
+    <p class="section-text">
+      Minimal. Cinematic. Introspective. Frank Ocean's artistry exists in the
+      space between memory and emotion. This design embraces soft light,
+      deep contrast, elegant typography, and subtle motion to create a more
+      immersive experience.
+    </p>
+  </section>
+
+  <section id="albums" class="content-section fade">
+    <h2 class="section-title">Discography Highlights</h2>
+
+    <div class="albums-grid">
+      <article class="album-card">
+        <h3>Channel Orange</h3>
+        <span>2012</span>
+        <p>Soulful storytelling and genre-defying production.</p>
+      </article>
+
+      <article class="album-card">
+        <h3>Endless</h3>
+        <span>2016</span>
+        <p>Experimental, immersive, and atmospheric.</p>
+      </article>
+
+      <article class="album-card">
+        <h3>Blonde</h3>
+        <span>2016</span>
+        <p>A modern masterpiece of emotion and vulnerability.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="legacy" class="quote-section fade">
+    <p>"Less light. More feeling."</p>
+  </section>
+</main>
+
+<footer>
+  <p>Inspired by the aesthetic world surrounding Frank Ocean.</p>
+</footer>
+
+<script>
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    }
+  });
+}, { threshold: 0.15 });
+
+document.querySelectorAll(".fade").forEach((el) => observer.observe(el));
+</script>
+
+</body>
+</html>
