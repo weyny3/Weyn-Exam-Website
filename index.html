@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<<<<<<< HEAD
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -59,17 +60,115 @@
         <h3>Channel Orange</h3>
         <span>2012</span>
         <p>Soulful storytelling and genre-defying production.</p>
+=======
+  
+  <head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frank Ocean</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+  </head>
+
+  <body>
+
+  <header>
+    <nav class="navbar">
+      <div class="logo">BLONDED</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#albums">Albums</a></li>
+        <li><a href="#newsletter">Newsletter</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+  
+<section id="home" class="home">
+  <div class="home-content fade">
+    <span class="home-tag">Artist • Visionary • Storyteller</span>
+    <h1>FRANK OCEAN</h1>
+    <p>
+      A voice drifting through memory, distance, and quiet emotion.
+      A world built from fragments of feeling.
+    </p>
+    <a href="#albums" class="btn">Explore Discography</a>
+  </div>
+</section>
+
+<section id="about" class="content-section fade">
+  <h2 class="section-title">Gone, but Not Gone</h2>
+  <p class="section-text"> Frank Ocean is an American singer, songwriter, and visionary known for reshaping modern R&B with his deeply personal storytelling and genre-blending sound. Emerging from the Odd Future collective, he quickly set himself apart with a style that feels intimate, cinematic, and emotionally raw. His work often explores love, identity, memory, and longing. It is delivered through soft vocals, layered production, and poetic lyricism that lingers long after the track ends. With critically acclaimed projects like Channel Orange and Blonde, Frank Ocean has built a legacy defined not by constant output but by timeless impact. Beyond music, he is also known for his artistic independence and elusive presence, choosing silence and intention over constant visibility. That mystery has only deepened the connection fans feel with his work, making every release feel personal, like a shared secret. Frank Ocean does not just make songs. He builds moods, memories, and moments you can live inside..</p>
+
+</section>
+
+<section id="albums" class="albums-section fade">
+  <div class="albums-container">
+
+    <h2 class="section-title">Discography Highlights</h2>
+
+    <div class="albums-grid">
+
+      <article class="album-card">
+        <h3>Channel Orange</h3>
+        <span>2012</span>
+        <p>Warm distortion, memory, and late-night reflection.</p>
+
+        <img src="imgs/channel ORANGE.jpg" class="album-thumb">
+
+        <div class="tracklist">
+
+          <button class="track-btn" data-title="Thinkin Bout You" data-audio="audio/thinkin.mp3" data-lyrics-id="thinkin">
+            Thinkin Bout You
+          </button>
+
+          <button class="track-btn" data-title="Lost" data-audio="audio/lost.mp3" data-lyrics-id="lost">
+            Lost
+          </button>
+
+          <button class="track-btn" data-title="Pyramids" data-audio="audio/pyramids.mp3" data-lyrics-id="pyramids">
+            Pyramids
+          </button>
+
+        </div>
+>>>>>>> fa3b57b (Second Update)
       </article>
 
       <article class="album-card">
         <h3>Endless</h3>
         <span>2016</span>
+<<<<<<< HEAD
         <p>Experimental, immersive, and atmospheric.</p>
+=======
+        <p>Looped emotion, slow drift, endless motion.</p>
+
+        <img src="imgs/endless.jpeg" class="album-thumb">
+
+        <div class="tracklist">
+
+          <button class="track-btn" data-title="Rushes" data-audio="audio/rushes.mp3" data-lyrics-id="rushes">
+            Rushes
+          </button>
+
+          <button class="track-btn" data-title="Slide On Me" data-audio="audio/slideonme.mp3" data-lyrics-id="slide">
+            Slide On Me
+          </button>
+
+        </div>
+>>>>>>> fa3b57b (Second Update)
       </article>
 
       <article class="album-card">
         <h3>Blonde</h3>
         <span>2016</span>
+<<<<<<< HEAD
         <p>A modern masterpiece of emotion and vulnerability.</p>
       </article>
     </div>
@@ -89,12 +188,164 @@ const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       entry.target.classList.add("show");
+=======
+        <p>Soft heartbreak, blurred identity, ocean thoughts.</p>
+
+        <img src="imgs/blond.jpeg" class="album-thumb">
+
+        <div class="tracklist">
+
+          <button class="track-btn" data-title="Nikes" data-audio="audio/nikes.mp3" data-lyrics-id="nikes">
+            Nikes
+          </button>
+
+          <button class="track-btn" data-title="Ivy" data-audio="audio/ivy.mp3" data-lyrics-id="ivy">
+            Ivy
+          </button>
+
+          <button class="track-btn" data-title="Pink + White" data-audio="audio/pinkwhite.mp3" data-lyrics-id="pinkwhite">
+            Pink + White
+          </button>
+
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section id="newsletter" class="newsletter-section fade">
+  <div class="newsletter-content">
+  
+    <span class="newsletter-tag">Occasional updates</span>
+    
+    <h2 class="section-title">Stay in the Loop</h2>
+    
+    <p class="section-text">
+      No noise. No spam. Just quiet notes when something changes.
+    </p>
+
+    <form class="newsletter-form" action="newsletter.php" method="POST">
+      
+      <input type="email" name="email" placeholder="Enter your email address" required>
+
+      <button type="submit">Subscribe</button>
+
+    </form>
+
+    <p class="newsletter-footnote">
+      You can unsubscribe anytime.
+    </p>
+
+  </div>
+</section>
+    
+<div id="playerModal" class="player-modal">
+  <div class="player-content">
+
+    <button id="closePlayer" class="close-btn">✕</button>
+
+    <h2 id="songTitle">Now Playing</h2>
+
+    <audio id="audioPlayer" controls></audio>
+
+    <div id="lyricsBox"></div>
+
+  </div>
+</div>
+
+</main>
+
+<script>
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+      observer.unobserve(entry.target);
+>>>>>>> fa3b57b (Second Update)
     }
   });
 }, { threshold: 0.15 });
 
+<<<<<<< HEAD
 document.querySelectorAll(".fade").forEach((el) => observer.observe(el));
+=======
+document.querySelectorAll(".fade").forEach(el => observer.observe(el));
+
+const modal = document.getElementById("playerModal");
+const audioPlayer = document.getElementById("audioPlayer");
+const songTitle = document.getElementById("songTitle");
+const lyricsBox = document.getElementById("lyricsBox");
+const closePlayer = document.getElementById("closePlayer");
+
+const lyricsDB = { 
+
+    thinkin: "[Verse 1] A tornado flew around my room before you came Excuse the mess it made, it usually doesn't rain in Southern California, much like Arizona My eyes don't shed tears, but boy, they pour [Pre-Chorus] When I'm thinkin' 'bout you, ooh, no, no, no I've been thinkin' 'bout you, you know, know, know I've been thinkin' 'bout you, do you think about me still? Do ya, do ya? [Chorus] Or do you not think so far ahead? 'Cause I been thinkin' 'bout forever, ooh Or do you not think so far ahead? 'Cause I been thinkin' 'bout forever, ooh [Verse 2] No, I don't like you, I just thought you were cool enough to kick it Got a beach house I could sell you in Idaho Since you think I don't love you, I just thought you were cute That's why I kissed you Got a fighter jet, I don't get to fly it though [Pre-Chorus] I'm lying down thinkin' 'bout you, ooh, no, no, no I've been thinkin' 'bout you, you know, know, know I've been thinkin' 'bout you, do you think about me still? (Do ya, do ya?) Do ya, do ya? (Do ya, do ya?) You might also like So Long, London Taylor Swift But Daddy I Love Him Taylor Swift Family Matters Drake [Chorus] Or do you not think so far ahead? 'Cause I been thinkin' 'bout forever, ooh Or do you not think so far ahead? 'Cause I been thinkin' 'bout forever, ooh [Bridge] Yes, of course I remember, how could I forget (How could I forget) How you feel? (How you feel?) You know you were my first time (Time) A new feel (Down) It won't ever get old, not in my soul, not in my spirit, keep it alive We'll go down this road 'til it turns from color to black and white [Chorus] Or do you not think so far ahead? 'Cause I been thinkin' 'bout forever, ooh Or do you not think so far ahead? 'Cause I been thinkin' 'bout forever, ooh",
+
+    lost: "[Verse 1] Double D, big full breasts on my baby (Yo, we goin' to Florida) Triple weight, couldn't weigh the love I've got for the girl And I just wanna know, why you ain't been goin' to work? Boss ain't workin' you like this, he can't take care of you like this [Chorus] Now you're lost, lost in the heat of it all Girl, you know you're lost, lost in the thrill of it all Miami, Amsterdam, Tokyo, Spain, lost Los Angeles, India, lost on a train, lost [Verse 2] Got on my buttercream silk shirt, and it's Versace (There he goes, one of God's own prototypes) Hand me my triple weight, so I can weigh the work I got on you, girl (Too weird to live and too rare to die) No, I don't really wish, I don't wish the titties would show No, have I ever, have I ever let you get caught? (Oh) [Chorus] Lost, lost in the heat of it all Girl, you know you're lost, lost in the thrill of it all Miami, Amsterdam, Tokyo, Spain, lost Los Angeles, India, lost on a train, lost [Verse 3] She's at a stove (Who?), can't believe I got her out here cookin' dope (Cookin' dope) I promise she'll be whippin' meals up for a family of her own some day Nothin' wrong, no, nothin' wrong with a lie (Nothin' wrong, ain't nothin' wrong, ooh) Nothin' wrong with another short plane ride through the sky, you and I (Ain't nothin' wrong, ain't nothin' wrong, up in the sky, just you and I) You might also like THE HEART PART 6 Drake Darling, I Tyler, The Creator Like Him Tyler, The Creator [Chorus] Lost (Ooh), lost in the heat of it all Girl, you know you're lost (Ooh), lost in the thrill of it all Miami, Amsterdam, Tokyo, Spain, lost (Ooh, ooh, ooh, ooh) Los Angeles, India, lost on a train, lost (Ooh, ooh, ooh, ooh) [Outro] Love lost, lost Love, love, love lost, lost Love, love, love lost Love, love, love lost Faith is the substance— ¡Manos arriba!— Any other channel on the—",
+
+    pyramids: "[Part I] [Chorus] Oh, oh, oh, oh Set the cheetahs on the loose Oh, oh, oh, oh There's a thief out on the move Oh, oh, oh, oh Underneath our legion's view Oh, oh, oh, oh They have taken Cleopatra [Bridge] Run, run, run, come back for my glory (Cleopatra, Cleopatra) Bring her back to me (Cleopatra, Cle-o-patra, Cleopatra) Run, run, run, the crown of our pharaoh (Cleopatra, Cleopatra) The throne of our queen is empty (Cle-o-patra, Cleopatra) [Verse 1] We'll run to the future, shining like diamonds In a rocky world, rocky-ky world Our skin like bronze and our hair like cashmere As we march to the rhythm on the palace floor, ah-ooh Chandeliers inside the pyramids tremble from the force Cymbals crash inside the pyramids, voices fill up the halls You might also like Darling, I Tyler, The Creator ALL RED Playboi Carti Thought I Was Dead Tyler, The Creator [Chorus] Oh, oh, oh, ooh Set the cheetahs on the loose Ayy, ayy, ayy There's a thief out on the move Oh, oh, oh, ooh Underneath our legion's view Ayy, ayy, ayy They have taken Cleopatra, Cleopatra [Verse 2] The jewel of Africa, jewel What good is a jewel that ain't still precious? How could you run off on me? How could you run off on us? You feel like God inside that gold I found you laying down with Samson and his full head of hair I found my black queen, Cleopatra, bad dreams, Cleopatra [Chorus] Oh, oh, woah Remove her, send the cheetahs to the tomb Oh, oh, woah Our war is over, our queen has met her doom Oh, no more She lives no more, a serpent's in her room Oh, no more He has killed Cleopatra, Cleopatra [Interlude] [Part II] [Verse 1] Big sun coming strong through the motel blinds Wake up to your girl For now, let's call her Cleopatra, Cleopatra I'll watch you fix your hair Then put your panties on in the mirror, Cleopatra Then your lipstick, Cleopatra Then your six-inch heels, catch her She's headed to the pyramid [Chorus] She's working at the pyramid tonight Working at the pyramid, ayy Working at the pyramid tonight, oh yeah Working at the pyramid, oh-ah Working at the pyramid tonight, yeah Working at the pyramid, oh Working at the pyramid tonight Working at the pyramid Working at the pyramid tonight [Verse 2] Pimpin' in my convos Bubbles in my champagne, let it be some jazz playing Top floor motel suite, twisting my cigars Floor model TV with the VCR Got rubies in my damn chain Whip ain't got no gas tank, but it still got woodgrain Got your girl working for me Hit the strip and my bill's paid, that keep my bills paid Hit the strip and my bill's paid, keep a nigga bills paid [Chorus] She's working at the pyramid tonight Working at the pyramid, ayy Working at the pyramid tonight, ayy Working at the pyramid, oh-ah Working at the pyramid tonight, yeah Working at the pyramid, ooh Working at the pyramid tonight Working at the pyramid [Verse 3] You showed up after work, I'm bathing your body Touch you in places only I know You're wet and you're warm just like our bathwater Can we make love before you go? The way you say my name makes me feel like I'm that nigga But I'm still unemployed You could say it's big, but you take it Ride cowgirl But your love ain't free no more, baby But your love ain't free no more [Chorus] She's working at the pyramid tonight Working at the pyramid, ayy Working at the pyramid tonight, oh yeah Working at the pyramid, that's right Working at the pyramid tonight, yeah Working at the pyramid, ooh Working at the pyramid tonight Working at the pyramid Working at the pyramid tonight",
+
+    rushes: "[Verse 1: Frank Ocean] Gonna be somebody, I follow Running showers, in a mist so cloudy Enough time to know, know nothing at all I see the lines (Walls) There's two lines (Walls) You'll live a life anew Tell me what you need from me? Gas money? And I did what I needed to, yeah To be kind Cut your teeth on sheets in Paris Hope the water's deep enough It's a rush to the head We've been here before (He's just like the water) The first time is not the past time I ain't felt this way in years [Bridge: Frank Ocean & Jazmine Sullivan] First, I was rushing for a wait This time, I'm waiting for a rush (Oh, help me up off my feet, yeah) Infatuation's your rush (Help me, help me, help me off my feet, yeah) (Do you wish you were me?) Keep pushing on 'em, never let 'em stop (Do you wish you were me?) All what happens to be, now it happens to me Upon his feet You might also like Family Matters Drake THE HEART PART 6 Drake loml Taylor Swift [Verse 2: Frank Ocean] Twin peaking, highs and lows We shaded off and on (Up on his feet) Bygones, but we're still here Riding in my two wheels I love the way you make me feel (I'll be up in a week) Bet you wish you was me? Might need some help on my feet Yeah, yeah, yeah, yeah, yeah, I be up to my feet I'll wake up in a week Wake me up in a week (It's like driving 'round, stroke me, suck me, pipe me down) (Two is a crowd, quieting down) (Bite me down, pad me down, do whatever to fly me down) [Outro: Frank Ocean] What stays and what— What's gone and what's here still? And what's here still? Riding my two wheels They're gone and you're still here, ridin' They're gone and you're still here, riding my two wheels I love the way you make me feel",
+
+    slide: "[Intro] Gotta rinse off out here I can't see your diamonds I need a week in paradise I went god mode all year I can't see so cloudy Paradiso laundries I keep the cheats on all year Sometime in heaven You still behind like ancestor All on your mood board all year I went god mode about it You ain't got no muscles, lil' nigga I ain't in the mood for it all year I keep the cheats on always Wrong side of average [Chorus] Now when you slide on me, you slide on me You slide off, oh, peace out, yeah, yeah That's a free slide on me, first time's on me Next time won't be, oh, yeah, yeah [Verse] For your mentality You play ball, you run five-on-five, least three times a week Glen Park, down the street Waiting on you to tire, retire with victory Play so savagely Always fighting with them you grew up with When you lose, you don't cry, but you low-key sad to see, uh-ah-uh If we cut like some champions, you'll redeem yourself You'll sleep happily, uh-ah-uh Smilin', I'm still working while you dream, pop I could never let a scene stop, smilin' on me I don't think they get the point, pop They forgettin' that it's me, akh Akhi, tell 'em I ain't gone, wallahi I'm just all day runnin' numbers How the fuck you think I live? Too many heads waiting for my downfall They're like, Something's gotta give Boys in the building give me updates like they know the weather If you ain't in the streets, you can't see the sky, I'm out here I could see the sky, and it's paradise On the regular You might also like In Here Somewhere Frank Ocean Rushes Frank Ocean Florida Frank Ocean [Chorus] And when you slide on me, you slide on me You slide on, oh, slide, yeah, yeah Now when you slide on me, you slide on me First time on me, oh, yeah, yeah [Outro] This is for when you change your mind and slide back this way This is for that night when setbacks won't let that much fade Guess you can't blame the ones you choose Blah, blah (Blur), blah (Blur) Blah, blah, blah (Blur) Blah, blah, blah (Blur) Blah, blah, blah, blah",
+
+    nikes: "[Verse 1: Frank Ocean] These bitches want Nikes They looking for a check Tell 'em it ain't likely Said she need a ring like Carmelo You must be on that white like Othello All you want is Nikes, but the real ones Just like you, just like me I don't play, I don't make time But if you need dick, I got you And I yam from the line Pour up for A$AP, R.I.P. Pimp C R.I.P. Trayvon, that nigga look just like me Woo, fuckin' buzzin', woo That my little cousin, he got a little trade His girl keep the scales, a little mermaid We out by the pool, some little mermaids Me and them gel like twigs with them bangs Now that's a real mermaid You been holding your breath, weighted down Punk madre, punk papá He don't care for me, but he cares for me And that's good enough We don't talk much or nothin' But when we talkin' 'bout somethin' We have good discussion I met his friends last week Feels like they're up to somethin' That's good for us You might also like Sticky Tyler, The Creator Judge Judy Tyler, The Creator Take Your Mask Off Tyler, The Creator [Verse 2: Frank Ocean] We'll let you guys prophesy We'll let you guys prophesy We gon' see the future first We'll let you guys prophesy We gon' see the future first Living so the last night feels like a past life Speaking of the don't know what got into people Devil be possessin' homies Demons try to body-jump Why you think I'm in this bitch wearing a fucking yarmulke? Acid on me like the rain Weed crumbles into glitter Rain, glitter We laid out on this wet floor Away turf, no Astro' Mesmerized how the strobes glow Look at all the people feet dance I know that your nigga came witcha But he ain't witcha We only human, and it's humid in these Balmains I mean, my balls stickin' in my jeans We breathin' pheromones, Amber Rose Sippin' pink-gold lemonades Feelin' [Outro: Frank Ocean & Amber Coffman, Frank Ocean] I may be younger, but I'll look after you (Prophesy) We're not in love, but I'll make love to you (Prophesy) When you're not here, I'll save some for you I'm not him, but I'll mean somethin' to you I'll mean something too I'll mean something too You got a roommate, he'll hear what we do It's only awkward if you're fuckin' him too [Verse 3: KOHH]",
+
+    ivy: "[Chorus] I thought that I was dreamin' when you said you love me The start of nothin' I had no chance to prepare, I couldn't see you comin' The start of nothin' Ooh, I could hate you now It's quite alright to hate me now When we both know that deep down The feeling still deep down is good [Verse 1] If I could see through walls, I could see you're fakin' If you could see my thoughts, you would see our faces Safe in my rental like an armored truck back then We didn't give a fuck back then I ain't a kid no more We'll never be those kids again We'd drive to Syd's Had the X6 back then, back then No matter what I did, my waves wouldn't dip back then Everything sucked back then, we were friends [Chorus] I thought that I was dreamin' when you said you love me The start of nothin' I had no chance to prepare, I couldn't see you comin' The start of nothin' Ooh, I could hate you now It's quite alright to hate me now But we both know that deep down The feeling still deep down is good You might also like THE HEART PART 6 Drake Not Like Us Kendrick Lamar Family Matters Drake [Verse 2] In the halls of your hotel Arm around my shoulder so I could tell How much I meant to you, meant it sincere back then We had time to kill back then You ain't a kid no more, we'll never be those kids again It's not the same, ivory's illegal, don't you remember? [Bridge] I broke your heart last week You'll probably feel better by the weekend Still remember, had you going crazy Screamin' my name, the feeling deep down is good [Chorus] I thought that I was dreamin' when you said you love me The start of nothin' Had no chance to prepare, couldn't see you comin' And we started from nothin' Ooh, I could hate you now It's alright to hate me now We both know that deep down The feeling still deep down is good [Outro] All the things I didn't mean to say, I didn't mean to do There were things you didn't need to say, did you mean to? Mean to? I've been dreamin' of you, dreamin' of you I've been dreamin' of you, dreamin' of you I've been dreamin', dreamin'",
+
+    pinkwhite: "[Intro: Frank Ocean] Yeah, yeah, oh (Woo) Yeah, yeah, yeah [Verse 1: Frank Ocean] That's the way every day goes Every time we've no control If the sky is pink and white If the ground is black and yellow It's the same way you showed me Nod my head, don't close my eyes Halfway on a slow move It's the same way you showed me If you could fly, then you'd feel south Up north's getting cold soon The way it is, we're on land So I'm someone to hold true Keep you cool when it's still alive Won't let you down when it's all ruin Just the same way you showed me, showed me [Chorus: Frank Ocean] You showed me love Glory from above Regard, my dear It's all downhill from here You might also like THE HEART PART 6 Drake Family Matters Drake Sticky Tyler, The Creator [Verse 2: Frank Ocean] In the wake of a hurricane Dark skin of a summer shade Nosedive in the flood lines Tall tower of milk crates It's the same way you showed me Cannonball off the porch side Older kids trying off the roof Just the same way you showed me (You showed) If you could die and come back to life Up for air from the swimming pool You'd kneel down to the dry land Kiss the earth that birthed you Gave you tools just to stay alive And make it out when the sun is ruined That's the same way you showed me, showed me [Chorus: Frank Ocean, Frank Ocean & Beyoncé] You showed me love (Ah) Glory from above Regard, my dear (Ah) It's all downhill from here [Outro: Frank Ocean, Frank Ocean & Beyoncé] Remember life, remember how it was? (Ah) Climb trees, Michael Jackson, all ends here (Recalling) Say what up to Matthew, to Shoob (Ooh) Say what up to Danny Say what up to life, immortality (Ah, yeah) Bending up my Nikes Running out of the Melpomene, nicotine (Ah, yeah) Stealing granny cigs (Take it easy) Gimme something sweet Bitch, I might like immortality (Woo) This is life, life immortality"
+
+};
+
+document.querySelectorAll(".track-btn").forEach(track => {
+
+  track.addEventListener("click", () => {
+
+    const id = track.dataset.lyricsId;
+
+    songTitle.textContent = track.dataset.title;
+
+    audioPlayer.pause();
+    audioPlayer.currentTime = 0;
+    audioPlayer.src = track.dataset.audio;
+    audioPlayer.load();
+
+    modal.classList.add("active");
+
+    lyricsBox.style.opacity = 0;
+
+    setTimeout(() => {
+      lyricsBox.textContent = lyricsDB[id] || "";
+      lyricsBox.style.opacity = 1;
+    }, 150);
+
+    audioPlayer.play().catch(err => {
+      console.log("Play blocked or failed:", err);
+    });
+
+  });
+
+});
+
+closePlayer.addEventListener("click", () => {
+  modal.classList.remove("active");
+  audioPlayer.pause();
+});
+
+modal.addEventListener("click", (e) => {
+  if (e.target === modal) {
+    modal.classList.remove("active");
+    audioPlayer.pause();
+  }
+});
+>>>>>>> fa3b57b (Second Update)
 </script>
 
 </body>
 </html>
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> fa3b57b (Second Update)
