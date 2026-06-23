@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+            <title>Frank Ocean | Tours</title>
+
+                <link rel="preconnect" href="https://fonts.googleapis.com">
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+                <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+:root
+{
+    --bg:#050505;
+    --text:#f5f5f5;
+    --muted:#b8b8b8;
+    --card:rgba(255,255,255,.04);
+}
+html
+{
+    scroll-behavior:smooth;
+}
+body
+{
+    font-family:'Inter',sans-serif;
+    color:var(--text);
+    background:var(--bg);
+    overflow-x:hidden;
+}
+body::before
+{
+    content:"";
+    position:fixed;
+    inset:0;
+    background:
+    radial-gradient(circle at top,
+    rgba(255,255,255,.08),
+    transparent 40%),
+    linear-gradient(
+    to bottom,
+    rgba(0,0,0,.15),
+    rgba(0,0,0,.95));
+    z-index:-2;
+}
+.navbar
+{
+    position:fixed;
+    top:0;
+    width:100%;
+    padding:1.2rem 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    backdrop-filter:blur(14px);
+    background:rgba(0,0,0,.35);
+    border-bottom:1px solid rgba(255,255,255,.06);
+    z-index:1000;
+}
+.logo
+{
+    font-family:'Cormorant Garamond',serif;
+    font-size:2rem;
+    letter-spacing:3px;
+}
+.nav-links{
+    display:flex;
+    gap:2rem;
+    list-style:none;
+}
+.nav-links a
+{
+    color:#d0d0d0;
+    text-decoration:none;
+    transition:.3s;
+}
+.nav-links a:hover
+{
+    color:white;
+}
+.tours-section
+{
+    padding:140px 10% 80px;
+    min-height:100vh;
+}
+.page-title
+{
+    font-family:'Cormorant Garamond',serif;
+    font-size:5rem;
+    text-align:center;
+    margin-bottom:1rem;
+    letter-spacing:3px;
+}
+.page-subtitle
+{
+    text-align:center;
+    color:var(--muted);
+    margin-bottom:4rem;
+}
+.tours-grid
+{
+    display:grid;
+    grid-template-columns:1fr 1.2fr;
+    gap:2rem;
+}
+.tours-list
+{
+    display:flex;
+    flex-direction:column;
+    gap:1.2rem;
+}
+.tour-card
+{
+    background:var(--card);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:18px;
+    padding:1.5rem;
+    transition:.3s ease;
+}
+.tour-card:hover
+{
+    transform:translateY(-4px);
+    border-color:rgba(255,255,255,.2);
+}
+.tour-date
+{
+    font-size:1.1rem;
+    margin-bottom:.4rem;
+    font-weight:600;
+}
+.tour-city
+{
+    font-size:1.3rem;
+    margin-bottom:.4rem;
+}
+.tour-venue
+{
+    color:var(--muted);
+}
+.map-container
+{
+    overflow:hidden;
+    border-radius:18px;
+    border:1px solid rgba(255,255,255,.08);
+    min-height:600px;
+}
+.map-container iframe
+{
+    width:100%;
+    height:100%;
+    border:none;
+}
+
+@media(max-width:900px){
+
+    .tours-grid{
+        grid-template-columns:1fr;
+    }
+
+    .map-container{
+        height:450px;
+    }
+
+    .navbar{
+        flex-direction:column;
+        gap:1rem;
+    }
+
+    .nav-links{
+        gap:1rem;
+    }
+
+    .page-title{
+        font-size:3rem;
+    }
+}
+
+</style>
+
+    </head>
+        <body>
+
+
+        <header>
+        <nav class="navbar">
+
+<div class="logo">BLONDED</div>
+
+    <ul class="nav-links">
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#albums">Albums</a></li>
+        <li><a href="index.html#newsletter">Newsletter</a></li>
+        <li><a href="tours.html">Tours</a></li>
+    </ul>
+
+        </nav>
+    </header>
+
+<section class="tours-section">
+
+<h1 class="page-title">The FINALE</h1>
+
+<p class="page-subtitle"> A few remaining stops before the lights go out. </p>
+
+<div class="tours-grid">
+
+<div class="tours-list">
+
+<div class="tour-card">
+    <div class="tour-date">July 12, 2026</div>
+    <div class="tour-city">Bacolod City</div>
+    <div class="tour-venue">University of St. La Salle</div>
+</div>
+
+<div class="tour-card">
+    <div class="tour-date">July 19, 2026</div>
+    <div class="tour-city">Manila</div>
+    <div class="tour-venue">SM Mall of Asia Arena</div>
+</div>
+
+<div class="tour-card">
+    <div class="tour-date">July 26, 2026</div>
+    <div class="tour-city">Cebu City</div>
+    <div class="tour-venue">Waterfront Hotel</div>
+</div>
+
+<div class="tour-card">
+    <div class="tour-date">August 2, 2026</div>
+    <div class="tour-city">Davao City</div>
+    <div class="tour-venue">SMX Convention Center</div>
+</div>
+
+    </div>
+
+    <div class="map-container">
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3920.7208465820386!2d122.95998157592709!3d10.678762560985776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33aed10b2f7ade09%3A0x73c444aeb939e122!2sUniversity%20of%20St.%20La%20Salle!5e0!3m2!1sen!2sph!4v1782218862294!5m2!1sen!2sph" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"> </iframe>
+
+        </div>
+        </div>
+
+    </section>
+
+</body>
+</html>
